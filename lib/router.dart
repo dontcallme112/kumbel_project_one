@@ -3,6 +3,7 @@ import 'package:project_app/favorites/favorites.dart';
 import 'package:project_app/home/home_screen.dart';
 import 'package:project_app/login/login_screen.dart';
 import 'package:project_app/recomendations/recomendations.dart';
+import 'package:project_app/register/register_screen.dart';
 
 final router = GoRouter(
   routes: [
@@ -13,6 +14,10 @@ final router = GoRouter(
     GoRoute(
       path: '/recommendations',
       builder: (context, state) => RecommendationsScreen(),
+    ),
+    GoRoute(
+      path: '/registration',
+      builder: (context, state) => RegisterScreen(),
     ),
   ],
 );
